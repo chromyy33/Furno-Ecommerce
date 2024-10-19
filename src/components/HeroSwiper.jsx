@@ -24,7 +24,7 @@ export default () => {
   return (
     <Swiper
       speed={1000} // Transition speed in ms (for both autoplay and manual swipes)
-      effect="coverflow"
+     
       autoplay={{ pauseOnMouseEnter: true, delay: 3000 }}
       loop
       modules={[
@@ -36,6 +36,7 @@ export default () => {
         EffectCoverflow,
       ]}
       slidesPerView={1}
+      spaceBetween={10}
       navigation
       pagination={{
         clickable: true,

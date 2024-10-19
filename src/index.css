@@ -1,4 +1,5 @@
 @import url("https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro?styles=82961,82971,82969,82967,82965,82963,82959,82957");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -23,10 +24,34 @@ body {
 }
 
 :root {
-  --swiper-navigation-color: theme('colors.beige');
-  --swiper-pagination-color: theme('colors.beige')
+  --swiper-navigation-color: theme("colors.beige");
+  --swiper-pagination-color: theme("colors.beige");
 }
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  @apply  hidden sm:block sm:text-[30px] lg:text-[40px];
+  @apply hidden sm:block sm:text-[30px] lg:text-[40px];
 }
+h1 {
+  @apply text-[clamp(2rem,5vw+1rem,4rem)] leading-[1.1] font-semibold;
+}
+
+h2 {
+  @apply text-[clamp(1.75rem,4vw+0.5rem,3rem)] leading-tight font-semibold;
+}
+
+h3 {
+  @apply text-[clamp(1.5rem,3vw+0.5rem,2.5rem)] leading-tight font-semibold;
+}
+
+h4 {
+  @apply text-[clamp(1.25rem,2vw+0.5rem,2rem)] leading-tight font-semibold;
+}
+
+h5 {
+  @apply text-[clamp(1.15rem,1.5vw+0.5rem,1.75rem)] leading-tight font-semibold;
+}
+
+h6 {
+  @apply text-[clamp(1rem,1vw+0.25rem,1.5rem)] leading-tight font-semibold;
+}
+

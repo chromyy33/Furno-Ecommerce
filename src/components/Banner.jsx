@@ -1,9 +1,13 @@
-import { Link } from "@nextui-org/link";
 import { Button } from "@nextui-org/react";
-import { MoveRight, TicketPercent, X } from "lucide-react";
-import {useEffect } from "react";
-function Banner({ promotionText = "Default Text", linkText = "Shop Now" ,isBannerOpen,setIsBannerOpen}) {
-
+import { TicketPercent, X } from "lucide-react";
+import { useEffect } from "react";
+import LinkBtn from "./UI/LinkBtn";
+function Banner({
+  promotionText = "Default Text",
+  linkText = "Shop Now",
+  isBannerOpen,
+  setIsBannerOpen,
+}) {
   const iconSize = 16;
 
   // Announce banner state changes for screen readers
@@ -26,18 +30,9 @@ function Banner({ promotionText = "Default Text", linkText = "Shop Now" ,isBanne
         {/* TicketPercent icon with aria-hidden since it's decorative */}
         <TicketPercent aria-hidden="true" className="w-[18px] xsm:w-[20px]" />
         <p className="font-semibold">{promotionText}</p>
-
-        <div className="border-b border-blue ">
-          {/* Link is focusable and includes accessible text */}
-          <Link
-            href="#"
-            className="text-blue font-semibold text-[12px] xsm:text-base"
-            aria-label={`${linkText} - promotional offer`}
-          >
-            {linkText}
-            {/* MoveRight icon with aria-hidden */}
-            <MoveRight size={iconSize}  className="ml-2 text-blue" aria-hidden="true" />
-          </Link>
+        <div className=" sm:block hidden">
+          
+          <LinkBtn color="#377DFF" />
         </div>
       </div>
       {/* Close button with accessible aria-label */}

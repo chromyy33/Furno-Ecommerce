@@ -23,6 +23,7 @@ export default {
       },
       screens: {
         xsm: "440px",
+        hero:'737px',
         md: "875px",
         lg: "1080px",
         xl: "1288px",
