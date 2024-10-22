@@ -6,7 +6,7 @@ function ServiceCard({ serviceData }) {
       <span className="">
         {<IconComponent size={36} className='xsm:w-[50px] h-[50px]' strokeWidth={1} />}
       </span>
-      <h6 className="font-semibold mt-auto mb-1">{text}</h6>
+      <h6 className="font-semibold mt-auto mb-1 text-lg">{text}</h6>
       <p className="tracking-normal font-medium text-greyLogo text-sm max-w-[10ch] xsm:max-w-[initial]">{subtext}</p>
     </div>
   );

@@ -17,11 +17,12 @@ import ProductCard from "./ProductCard";
 export default () => {
   const [perView, setPerView] = useState(1); // Default slidesPerView
 
-  const cardWidth = 260; // Define the width of a card (can be dynamic or fixed)
+  const cardWidth = 280; // Define the width of a card (can be dynamic or fixed)
 
   // Function to calculate the number of slides per view
   const calculateSlidesPerView = () => {
-    const bodyWidth = window.innerWidth; // Get the width of the viewport
+    let bodyWidth = window.innerWidth; // Get the width of the viewport
+    bodyWidth = bodyWidth > 1280 ? 1280 : bodyWidth;
     const newPerView = bodyWidth / cardWidth; // Calculate how many slides fit
     setPerView(newPerView); // Update state with the rounded value
   };
@@ -34,16 +35,15 @@ export default () => {
     };
   }, []);
   return (
+    <>
+    <h4 className="mb-4">New Arrivals</h4>
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
       spaceBetween={10}
       navigation
       slidesPerView={perView}
       scrollbar
-      onResize={() => {
-        const perView = bodyWidth / cardWidth;
-        return perView;
-      }}
+     
       className="mb-12"
     >
       {Array.from({ length: 8 }).map((_, index) => {
@@ -54,5 +54,6 @@ export default () => {
         );
       })}
     </Swiper>
+    </>
   );
 };

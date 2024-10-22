@@ -9,7 +9,7 @@ function LinkBtn({ linkText = "Shop Now", color = "#343839", to = "#" }) {
       {/* Link is focusable and includes accessible text */}
       <Link
         href={to}
-        className="font-semibold text-[12px] xsm:text-base"
+        className="font-semibold text-[12px] xsm:text-[14px]"
         style={{ color }} // Dynamic text color
         aria-label={`${linkText} - promotional offer`}
       >

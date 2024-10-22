@@ -37,7 +37,7 @@ function Nav() {
     };
   }, [isOpen]); // Effect will run whenever isOpen changes
   return (
-    <nav className="nav flex px-8 justify-between h-[5rem] max-width box-content mx-auto">
+    <nav className="nav flex px-8 justify-between h-[5rem] max-width mx-auto">
       {/* Left Section: Menu button and Logo */}
       <div className="left flex gap-1 items-center">
         <button

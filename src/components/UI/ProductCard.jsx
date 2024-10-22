@@ -3,7 +3,7 @@ import HorizontalBadge from "./HorizontalBadge";
 import { Heart } from "lucide-react";
 function ProductCard() {
   return (
-    <div className="relative max-w-[16rem] product-card smooth ">
+    <div className="relative product-card smooth ">
       <div className="bg-beige flex flex-col group border rounded-md px-4 shadow-sm py-4 h-[20rem] ">
         <img
           src="sofa.png"

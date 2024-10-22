@@ -2,7 +2,7 @@ import CartItem from "../components/CartItem";
 
 function Wishlist() {
   return (
-    <div className="">
+    <div className="px-8">
       <div className="wishlist-img max-width mx-auto relative flex items-center h-[18rem] justify-center xsm:h-[initial]">
         <img
           src="https://www.ikea.com/ext/ingkadam/m/7cccfe731c9f2176/original/PH200293.jpg?f=sg"
@@ -22,7 +22,7 @@ function Wishlist() {
       <div className="list max-width mx-auto">
       <h2 className="mt-7 mb-12 text-xl font-semibold border-b border-t py-4">Your Wishlist</h2>
       <ul className="flex flex-col gap-8">
-        <CartItem />
+        <CartItem isWishItem={false} />
         <CartItem />
         <CartItem />
 

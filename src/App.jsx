@@ -31,7 +31,7 @@ function App() {
         <section
           className={`content-start  ${
             isBannerOpen ? "mt-[128px]" : "mt-[80px]"
-          } px-8`}
+          }`}
         >
           <Routes>
             <Route path="/" element={<Home />} />
