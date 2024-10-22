@@ -1,5 +1,7 @@
 import HeroSwiper from "../components/HeroSwiper";
 import HomeCategory from "../components/HomeCategory";
+import ProductSwiper from "../components/UI/ProductSwiper";
+import Services from "../components/UI/Services";
 function Home() {
   const data = {
     homeCategories: [
@@ -20,7 +22,7 @@ function Home() {
 
   const { homeCategories } = data;
   return (
-    <div className="max-width mx-auto">
+    <div className="max-width mx-auto hero">
       <HeroSwiper />
 
       <div className="hero-heading py-8 hero:py-12 sm:flex justify-between flex flex-col gap-3 hero:flex-row hero:items-center">
@@ -38,7 +40,7 @@ function Home() {
           store based in Delhi, India. Est. since 2024
         </h6>
       </div>
-      <div className="category-grid py-8 hero:py-12 grid grid-cols-1 md:grid-rows-2 md:grid-cols-2 gap-4">
+      <div className="category-grid py-8 hero:py-12 grid grid-cols-1 md:grid-rows-2 md:grid-cols-2 gap-4 md:max-h-[65rem]">
         {homeCategories.map((category, index) => {
           return (
             <HomeCategory
@@ -51,6 +53,8 @@ function Home() {
           );
         })}
       </div>
+      <ProductSwiper/>
+      <Services/>
     </div>
   );
 }

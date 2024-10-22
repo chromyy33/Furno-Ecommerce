@@ -54,4 +54,3 @@ h5 {
 h6 {
   @apply text-[clamp(1rem,1vw+0.25rem,1.5rem)] leading-tight font-semibold;
 }
-

@@ -44,15 +44,17 @@ function Search({ isSearchOpen, setIsSearchOpen }) {
             </span>
             <Input
               type="text"
-              
               isClearable
               radius="sm"
-              className="w-[20rem] xsm:w-[25rem] sm:w-[30rem] font-semibold"
+              className="search-input w-[20rem] xsm:w-[25rem] sm:w-[30rem] font-semibold"
               size="lg"
+              classNames={{
+                inputWrapper:'border'
+              }}
               variant="bordered"
               placeholder="Search for an item..."
             />
-            <Card radius="sm" className="mt-1 w-[full] mx-auto" shadow="sm">
+            <Card radius="sm" className="mt-1 w-[full] mx-auto border " shadow="none">
               <CardBody className="p-0 pb-3">
                 <ul className="search-history flex flex-col">
                   <li className="font-medium flex items-center px-3 text-greyLogo pt-3 pb-1">Popular Searches</li>
