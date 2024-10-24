@@ -19,8 +19,8 @@ body {
 .max-width {
   max-width: 1184px;
 }
-.link-hover {
-  opacity: 0.9;
+.link-hover:hover {
+  opacity: 0.7;
 }
 
 :root {
@@ -53,4 +53,10 @@ h5 {
 
 h6 {
   @apply text-[clamp(1rem,1vw+0.25rem,1.5rem)] leading-tight font-semibold;
+}
+input::placeholder {
+  font-weight: 500;
+  color: #6C7275;
+  opacity: .9;
+  letter-spacing: 0.15px;
 }

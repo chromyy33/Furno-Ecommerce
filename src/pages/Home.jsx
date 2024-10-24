@@ -1,5 +1,6 @@
 import HeroSwiper from "../components/HeroSwiper";
 import Sale from "../components/Sale";
+import Footer from "../components/UI/Footer";
 import HeroHeading from "../components/UI/HeroHeading";
 import HomeArticles from "../components/UI/HomeArticles";
 import HomeCategories from "../components/UI/HomeCategories";
@@ -22,6 +23,7 @@ function Home() {
       <div className="max-width mx-auto px-8 ">
         <HomeArticles />
       </div>
+        <Footer />
     </>
   );
 }
