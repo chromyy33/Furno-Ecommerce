@@ -4,7 +4,7 @@ function SocialIconItem({ children }) {
   return (
     <Link>
       <Button
-        className="smooth bg-transparent text-inherit group hover:invert"
+        className="smooth bg-transparent text-inherit group"
         isIconOnly
       >
         {children}

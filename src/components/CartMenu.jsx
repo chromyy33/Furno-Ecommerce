@@ -3,7 +3,7 @@ import { X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Button } from "@nextui-org/react";
 import { Link } from "react-router-dom";
-import CartItem from "./CartItem";
+import CartItem from "./UI/Atoms/CartItem";
 
 function CartMenu({ isCartOpen, setIsCartOpen }) {
   const iconSize = 24;

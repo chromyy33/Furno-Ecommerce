@@ -1,6 +1,6 @@
 import { Button } from "@nextui-org/react";
 import { Plus, Trash2, Minus, Heart } from "lucide-react";
-import HorizontalBadge from "./UI/HorizontalBadge";
+import HorizontalBadge from "./HorizontalBadge";
 function CartItem({ isWishItem = true, additionalStyles = "" }) {
   return (
     <li

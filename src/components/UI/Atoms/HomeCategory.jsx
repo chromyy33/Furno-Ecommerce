@@ -1,5 +1,5 @@
 import { Card, CardBody, CardHeader } from "@nextui-org/react";
-import LinkBtn from "./UI/LinkBtn";
+import LinkBtn from './LinkBtn'
 function HomeCategory({ category, additionalStyles }) {
   const { name, url } = category;
   return (

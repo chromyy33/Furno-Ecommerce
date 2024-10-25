@@ -5,13 +5,13 @@ import {
   X,
   Search as SearchIcon,
 } from "lucide-react";
-import NavLinkEl from "./NavLinkEl";
+import NavLinkEl from "./UI/Atoms/NavLinkEl";
 import { useState, useEffect } from "react";
 import { Button } from "@nextui-org/react";
-import Overlay from "./Overlay";
+import Overlay from "./UI/Atoms/Overlay";
 import { Link } from "react-router-dom";
-import CustomBadge from "./UI/CustomBadge";
-import SocialIcons from "./UI/SocialIcons";
+import CustomBadge from "./UI/Atoms/CustomBadge";
+import SocialIcons from "./SocialIcons";
 import { Search } from "./Search";
 import CartMenu from "./CartMenu";
 
@@ -116,6 +116,13 @@ function Nav() {
             }}
           />
           <NavLinkEl
+            name="Blog"
+            to="/blog"
+            onClick={() => {
+              setIsOpen(false);
+            }}
+          />
+          <NavLinkEl
             name="Wishlists"
             to="/wishlist"
             icon={<Heart />}
@@ -125,6 +132,7 @@ function Nav() {
             }}
             isBadge={true}
           />
+
           <li className="mt-auto pb-8">
             <SocialIcons additionalStyles="md:hidden gap-4" />
           </li>

@@ -1,6 +1,5 @@
 import { Truck, Banknote, LockKeyhole, Phone } from "lucide-react";
-import ServiceCard from "./ServiceCard";
-
+import ServiceCard from '../../components/UI/Atoms/ServiceCard'
 function Services() {
   const servicesData = [
     {

@@ -1,4 +1,4 @@
-import  HomeCategory  from "../HomeCategory";
+import HomeCategory  from "../../components/UI/Atoms/HomeCategory";
 
 function HomeCategories() {
   const homeCategoriesData = [

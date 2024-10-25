@@ -1,7 +1,8 @@
 import { Button } from "@nextui-org/react";
 import { TicketPercent, X } from "lucide-react";
 import { useEffect } from "react";
-import LinkBtn from "./UI/LinkBtn";
+import LinkBtn from "./UI/Atoms/LinkBtn";
+
 function Banner({
   promotionText = "Default Text",
   linkText = "Shop Now",

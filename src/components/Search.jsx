@@ -1,7 +1,7 @@
 import { Button, Card, Input, CardBody } from "@nextui-org/react";
 import { X, Search as SearchIcon } from "lucide-react";
 import { useEffect } from "react";
-import SearchItem from "./UI/SearchItem";
+import SearchItem from "./UI/Atoms/SearchItem";
 function Search({ isSearchOpen, setIsSearchOpen }) {
   // Sync overflow: hidden with isOpen
   useEffect(() => {

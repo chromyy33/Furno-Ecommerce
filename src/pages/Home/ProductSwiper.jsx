@@ -13,7 +13,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import ProductCard from "./ProductCard";
+import ProductCard from "../../components/UI/Atoms/ProductCard";
 export default () => {
   const [perView, setPerView] = useState(1); // Default slidesPerView
 

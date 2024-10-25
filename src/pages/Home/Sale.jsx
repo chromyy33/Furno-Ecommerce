@@ -1,5 +1,4 @@
-import LinkBtn from "./UI/LinkBtn";
-
+import LinkBtn from "../../components/UI/Atoms/LinkBtn";
 function Sale() {
   return (
     <div className="sale mb-12 sm:flex sm:h-[80vw] max-h-[750px]">
