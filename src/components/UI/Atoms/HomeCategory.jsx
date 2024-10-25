@@ -10,7 +10,7 @@ function HomeCategory({ category, additionalStyles }) {
           <LinkBtn to={`/${name}`} />
         </div>
       </CardHeader>
-      <CardBody className=" w-[12rem] mx-auto  xsm:w-[14rem] sm:w-full max-w-[20rem] overflow-y-hidden">
+      <CardBody className=" w-[12rem] mx-auto  xsm:w-[14rem] hero:w-full max-w-[20rem] overflow-y-hidden">
         <img
           className="md:mt-auto md:mb-auto md:self-center object-contain "
           src={url}

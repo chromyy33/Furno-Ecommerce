@@ -5,12 +5,12 @@ import articles from "../pages/Blog/BlogData";
 import BlogItem from "./UI/Atoms/BlogItem";
 import { useParams } from "react-router";
 function Article() {
-  const { title:articleTitle } = useParams();
-  console.log(articleTitle)
+  const { title: articleTitle } = useParams();
+  console.log(articleTitle);
   const blogData = articles.find((article) => {
     return article.title === articleTitle;
   });
-  console.log(blogData)
+  console.log(blogData);
   const {
     title,
     author,
@@ -22,7 +22,7 @@ function Article() {
   } = blogData;
   const userLocale = navigator.language || "en-US"; // Get user's locale
   const dateString = new Date(timestamp).toLocaleDateString(userLocale, {
-    month: "long",
+    month: "short",
     day: "numeric",
     year: "numeric",
   });
@@ -43,7 +43,7 @@ function Article() {
       <div className="article-header">
         <p className="text-sm font-semibold pb-2 pt-8">ARTICLE</p>
         <h3>{title}</h3>
-        <div className="flex text-greyLogo/80 gap-6 pt-6 pb-10">
+        <div className="flex text-greyLogo/80 text-sm md:text-base gap-2 md:gap-6 pt-6 pb-10">
           <span className="flex gap-1 items-center text font-medium">
             <UserCircle2 size={18} />
             {author}
@@ -57,7 +57,11 @@ function Article() {
             {readTime}
           </span>
         </div>
-        <img className="min-h-[22rem] w-full object-cover max-h-[30rem]" src={image} alt={title} />
+        <img
+          className="min-h-[22rem] w-full object-cover max-h-[30rem]"
+          src={image}
+          alt={title}
+        />
 
         <div className="flex gap-8 flex-col py-12">
           {headings.map((blockData) => {

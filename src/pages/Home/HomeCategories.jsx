@@ -16,7 +16,7 @@ function HomeCategories() {
     },
   ];
   return (
-    <div className="category-grid py-8 hero:py-12 grid grid-cols-1 md:grid-rows-2 md:grid-cols-2 gap-4 md:max-h-[65rem]">
+    <div className="category-grid py-8 hero:py-12 grid grid-cols-1 md:grid-rows-2 md:grid-cols-2 gap-4 md:max-h-[50rem]">
       {homeCategoriesData.map((category, index) => {
         return (
           <HomeCategory

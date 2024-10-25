@@ -58,7 +58,7 @@ function Nav() {
       <div className="z-10">
         <Overlay additionalStyles="" isOpen={isOpen} />
         <ul
-          className={` md:flex md:gap-[2rem] flex flex-col absolute bg-white w-[95%] h-[100vh]  md:opacity-100 inset-0  gap-6 px-6 pt-6 md:items-center transition-all ease-in duration-200 ${
+          className={` md:flex md:gap-[1.5rem] flex flex-col absolute bg-white w-[95%] h-[100vh]  md:opacity-100 inset-0  gap-6 px-6 pt-6 md:items-center transition-all ease-in duration-200 ${
             isOpen ? "left-[0] opacity-100" : "left-[-100%] opacity-0"
           } md:w-auto md:h-auto md:flex-row md:left-[50%] md:translate-x-[-50%] md:bg-transparent md:inset-[initial]`}
         >
