@@ -1,12 +1,11 @@
 import { CalendarRangeIcon, Clock, UserCircle2 } from "lucide-react";
-import ArticleBlock from "./UI/Atoms/ArticleBlock";
-import LinkBtn from "./UI/Atoms/LinkBtn";
-import articles from "../pages/Blog/BlogData";
-import BlogItem from "./UI/Atoms/BlogItem";
+import ArticleBlock from "../../components/UI/Atoms/ArticleBlock";
+import LinkBtn from "../../components/UI/Atoms/LinkBtn";
+import articles from "./BlogData";
+import BlogItem from "../../components/UI/Atoms/BlogItem";
 import { useParams } from "react-router";
 function Article() {
   const { title: articleTitle } = useParams();
-  console.log(articleTitle);
   const blogData = articles.find((article) => {
     return article.title === articleTitle;
   });
@@ -35,7 +34,6 @@ function Article() {
       (article) => article.category !== category
     );
     suggestedData = [...suggestedData, ...additionalArticles];
-    console.log(suggestedData);
   }
   return (
     <div className="px-8 max-width mx-auto">

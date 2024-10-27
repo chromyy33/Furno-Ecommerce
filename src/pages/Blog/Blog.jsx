@@ -3,7 +3,6 @@ import articles from "./BlogData";
 import PageImage from "../../components/UI/Atoms/PageImage";
 import { useState } from "react";
 import BlogItem from "../../components/UI/Atoms/BlogItem";
-import Article from "../../components/Article";
 import { Button } from "@nextui-org/react";
 function Blog() {
   const [showAllArticles, setShowAllArticles] = useState(false);

@@ -1,11 +1,19 @@
-import { Truck, Banknote, LockKeyhole, Phone } from "lucide-react";
-import ServiceCard from '../../components/UI/Atoms/ServiceCard'
-function Services() {
+import {
+  Truck,
+  Banknote,
+  LockKeyhole,
+  Phone,
+  Mail,
+  Store,
+  MessageSquareDot
+} from "lucide-react";
+import ServiceCard from "../../components/UI/Atoms/ServiceCard";
+function Services({ isContactInfo=false }) {
   const servicesData = [
     {
       text: "Free Shipping",
       subtext: "On orders above $200",
-      icon: Truck, // You can use an actual icon component here if needed
+      icon: Truck,
     },
     {
       text: "Money back",
@@ -23,10 +31,34 @@ function Services() {
       icon: Phone,
     },
   ];
+  const contactData = [
+    {
+      text: "Address",
+      subtext: "New Delhi,India",
+      icon: Store,
+    },
+    {
+      text: "Contact Us",
+      subtext: "Phone and Email Support",
+      icon: Phone,
+    },
+    {
+      text: "Email",
+      subtext: "customer@3legant.com",
+      icon:Mail,
+    },
+    {
+      text: "Socials",
+      subtext: "@3legantFinds",
+      icon:MessageSquareDot,
+    },
+   
+  ];
+  const passedData=isContactInfo?contactData:servicesData
 
   return (
     <div className="services grid grid-cols-2 grid-rows-2 pb-12 gap-3  md:grid-cols-4 md:gap-6 md:grid-rows-1">
-      {servicesData.map((serviceData, index) => {
+      {passedData.map((serviceData, index) => {
         return <ServiceCard key={index} serviceData={serviceData} />;
       })}
     </div>

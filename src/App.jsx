@@ -4,13 +4,13 @@ import Nav from "./components/Nav";
 import { NextUIProvider } from "@nextui-org/react";
 import { Routes, Route, useNavigate, useHref } from "react-router-dom";
 import Shop from "./pages/Shop.jsx";
-import Contact from "./pages/Contact.jsx";
+import Contact from "./pages/Contact Us/Contact.jsx";
 import Products from "./pages/Products.jsx";
 import Wishlist from "./pages/Wishlist.jsx";
 import Home from "./pages/Home/Home.jsx";
 import Blog from "./pages/Blog/Blog.jsx";
 import { useState } from "react";
-import Article from "./components/Article.jsx";
+import Article from "./pages/Blog/Article.jsx"
 import Footer from "./components/Footer.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 
