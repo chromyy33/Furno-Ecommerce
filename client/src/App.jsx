@@ -1,6 +1,6 @@
-import Banner from "./components/Banner";
+import Banner from "./components/Banner.jsx";
 
-import Nav from "./components/Nav";
+import Nav from "./components/Nav.jsx";
 import { NextUIProvider } from "@nextui-org/react";
 import { Routes, Route, useNavigate, useHref } from "react-router-dom";
 import Shop from "./pages/Shop.jsx";
