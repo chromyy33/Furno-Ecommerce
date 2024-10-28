@@ -43,8 +43,8 @@ export default () => {
         dynamicBullets: true,
         type: "bullets",
       }}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
+      
+      
     >
       {urls.map((img, index) => {
         return (

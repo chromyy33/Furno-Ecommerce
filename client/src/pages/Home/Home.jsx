@@ -7,10 +7,9 @@ import HomeCategories from "./HomeCategories";
 import ProductSwiper from "./ProductSwiper";
 import Services from "./Services";
 
-function Home() {
+function Home({ blogData }) {
   const data = {};
 
-  const { homeCategories } = data;
   return (
     <>
       <div className="max-width mx-auto hero px-8 ">
@@ -22,7 +21,7 @@ function Home() {
       </div>
       <Sale />
       <div className="max-width mx-auto px-8 ">
-        <HomeArticles />
+        <HomeArticles blogData={blogData} />
       </div>
     </>
   );

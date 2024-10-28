@@ -10,7 +10,6 @@ function BlogItem({ blogData, onBlogPage = false }) {
     year: "numeric",
   });
 
-  console.log(dateString);
   return (
     <Link to={`/blog/${title}`}>
      

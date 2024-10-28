@@ -11,11 +11,13 @@
   },
   "dependencies": {
     "@nextui-org/react": "^2.4.8",
+    "@reduxjs/toolkit": "^2.3.0",
     "eslint-plugin-tailwindcss": "^3.17.5",
     "framer-motion": "^11.11.8",
     "lucide-react": "^0.452.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-redux": "^9.1.2",
     "react-router": "^6.27.0",
     "react-router-dom": "^6.27.0",
     "swiper": "^11.1.14"
