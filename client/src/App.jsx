@@ -9,13 +9,12 @@ import Products from "./pages/Products.jsx";
 import Wishlist from "./pages/Wishlist.jsx";
 import Home from "./pages/Home/Home.jsx";
 import Blog from "./pages/Blog/Blog.jsx";
-import { useState } from "react";
-import Article from "./pages/Blog/Article.jsx"
+import { useEffect, useState } from "react";
+import Article from "./pages/Blog/Article.jsx";
 import Footer from "./components/Footer.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 
 function App() {
-  const iconSize = 16;
   const navigate = useNavigate();
   const [isBannerOpen, setIsBannerOpen] = useState(true);
   const bannerText = "30% of storewide-Limited time!";
@@ -36,7 +35,7 @@ function App() {
             isBannerOpen ? "mt-[128px]" : "mt-[80px]"
           }`}
         >
-            <ScrollToTop/>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/shop" element={<Shop />} />
@@ -48,7 +47,6 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
           <Footer />
-
         </section>
         <section className="h-screen bg-red-50">p2</section>
       </main>

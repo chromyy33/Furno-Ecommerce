@@ -1,0 +1,15 @@
+[
+    {
+      "title": "Product 1",
+      "price": 10.99,
+      "qty": 100,
+      "description": "Description for product 1"
+    },
+    {
+      "title": "Product 2",
+      "price": 15.49,
+      "qty": 200,
+      "description": "Description for product 2"
+    }
+  ]
+  
