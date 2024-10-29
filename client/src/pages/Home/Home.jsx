@@ -1,6 +1,5 @@
 import HeroSwiper from "./HeroSwiper";
 import Sale from "./Sale";
-import Footer from "../../components/Footer";
 import HeroHeading from "./HeroHeading";
 import HomeArticles from "./HomeArticles";
 import HomeCategories from "./HomeCategories";

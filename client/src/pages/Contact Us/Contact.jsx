@@ -1,4 +1,3 @@
-import { Form } from "react-router-dom";
 import Sale from "../Home/Sale";
 import Services from "../Home/Services";
 import { Button, Input, Textarea } from "@nextui-org/react";
@@ -68,13 +67,13 @@ function Contact() {
               radius="none"
               name="message"
               id="message"
-              className="border px-3 py-3 rounded-[6px] h-36 focus:outline shadow-sm"
+              className="border px-3 py-3 rounded-[6px] h-36 focus:outline shadow-sm focus:outline-black2"
             ></textarea>
           </div>
           <Button
             type="submit"
             radius="sm"
-            className="bg-black text-white w-[15rem] mx-auto"
+            className="bg-black2 text-white w-[15rem] mx-auto"
           >
             Send Message
           </Button>

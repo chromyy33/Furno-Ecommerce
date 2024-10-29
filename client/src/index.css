@@ -56,7 +56,10 @@ h6 {
 }
 input::placeholder {
   font-weight: 500;
-  color: #6C7275;
-  opacity: .9;
+  color: #6c7275;
+  opacity: 0.9;
   letter-spacing: 0.15px;
+}
+.font-normal{
+  font-weight: 500;
 }

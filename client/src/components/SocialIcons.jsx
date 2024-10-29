@@ -1,6 +1,5 @@
 import { Facebook, Twitter, Instagram } from "lucide-react";
-import { Link } from "react-router-dom";
-import { Button } from "@nextui-org/react";
+
 import SocialIconItem from "./UI/Atoms/SocialIconItem";
 function SocialIcons({ additionalStyles = "" }) {
   return (

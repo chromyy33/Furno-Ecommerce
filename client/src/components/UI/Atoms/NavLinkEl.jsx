@@ -1,5 +1,4 @@
 
-import { Badge } from "@nextui-org/badge";
 import { NavLink } from "react-router-dom";
 import CustomBadge from "./CustomBadge";
 function NavLinkEl({

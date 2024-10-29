@@ -1,5 +1,4 @@
-import { Input } from "@nextui-org/react";
-import { Mail } from "lucide-react";
+
 import NewsletterForm from "./NewsletterForm";
 
 function Newsletter() {
